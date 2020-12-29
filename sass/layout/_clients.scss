@@ -1,0 +1,37 @@
+.clients-list {
+  display: flex;
+  height: 90px;
+}
+
+.clients-item {
+  flex-basis: calc((100% -150px) / 6);
+
+  &:not(:first-child) {
+    margin-left: $list-item-gap;
+  }
+}
+
+.clients-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  color: $icons-color;
+  border: 1px solid $icons-color;
+  border-radius: 4px;
+
+  transition-property: color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: $cubic;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}
+
+.clients-button-icon {
+  fill: currentColor;
+}

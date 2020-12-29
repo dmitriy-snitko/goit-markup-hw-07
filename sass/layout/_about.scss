@@ -1,0 +1,28 @@
+.about__list {
+  display: flex;
+}
+
+.about__item {
+  position: relative;
+  flex-basis: calc((100% - 60px) / 3);
+
+  &:not(:first-child) {
+    margin-left: $list-item-gap;
+  }
+}
+
+.about__title {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 70px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $primery-light-color;
+  background-color: $about-title-bgc;
+}

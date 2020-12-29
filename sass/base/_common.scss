@@ -1,0 +1,49 @@
+body {
+  font-family: $main-font;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+
+  color: $primery-text-color;
+}
+
+.scroll-lock {
+  width: 100vw;
+  height: 100vh;
+
+  overflow-y: scroll;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+section.padding {
+  padding: 94px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
